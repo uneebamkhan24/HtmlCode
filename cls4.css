@@ -1,11 +1,52 @@
+body{
+    background-color: rgb(255, 255, 255);
+    ;
+}
+
 h2{
 
-    background-color: rgb(173, 144, 200);
+    background-color: rgb(255, 255, 255);
     letter-spacing: 0ch;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
     
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: black; */
     
+
+    border-top: 2px dotted orange;
+    border-right: 4px dashed green;
+    border-bottom: 2px dotted orange;
+    border-left: 2px solid black;
+
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    
+
+    padding: 50px;
+    margin-top: 10px;
+    margin-right: 500px;
+        
 }
 
-body{
+
+
+p{
     background-color: bisque;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    
+    
 }
+#ci{
+    width: 150px;
+    height: 150px;
+    border: 2px solid red;
+    border-radius: 50%;
+    margin-left: 50%;
+}
+
+
