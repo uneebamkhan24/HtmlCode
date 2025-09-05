@@ -1,0 +1,30 @@
+.new1{
+    color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+
+.sq1{
+
+    height: 300px;
+    width: 300px;
+    border: 2px solid rgb(0, 0, 0);
+          
+}
+   
+.circle{
+    
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.square2{
+    height: 300px;
+    width: 300px;
+    border: 2px solid rgb(0, 0, 0);
+         
+    }
+}
