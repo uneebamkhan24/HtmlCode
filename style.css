@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#navbar{
+    width: 100%;
+    height: 60px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+#navbar nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+
+}
+
+#navbar nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+#navbar div{
+    display: flex;
+    gap: 20px;
+}
+
+#navbar button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #FA7E65;
+    border: none;
+    color: white;
+    padding: 6px 17px 6px 17px;
+}
