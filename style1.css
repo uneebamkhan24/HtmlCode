@@ -1,34 +1,33 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #ffffff;
-  color: #222;
-}
+
 #navbar {
   width: 100%;
   background-color: rgb(35, 35, 35);
   padding: 10px;
   position: absolute;
 }
+
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .brand {
   color: white;
-  font-size: 1.5rem;
+  font-size: 16px; /* corrected */
+  margin-left: 200px;
 }
 
 nav ul {
   display: flex;
   list-style: none;
   gap: 20px;
+  font-family: sans-serif;
 }
 
 nav ul li a {
@@ -50,8 +49,13 @@ nav ul li a:hover {
 }
 
 .logo i {
-  font-size: 1.2rem;
+  font-size: 20px;
   color: white;
+}
+
+.logo button {
+  padding: 8px 16px;
+  font-size: 12px;
 }
 
 .bl {
@@ -65,43 +69,69 @@ nav ul li a:hover {
 }
 
 .page1 {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem 2rem;
-  background-color: white;
+  padding: 64px 32px; /* 4rem = 64px, 2rem = 32px */
+  background-color: rgb(35, 35, 35);
 }
 
-.text h1{
-  margin: 0px 0px 16px; 
+.text h1 {
   font-size: 48px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
 }
 
 .text p {
   font-size: 20px;
-  color: #555;
+  color: #ffffff;
   font-family: sans-serif;
 }
-.text p h5{
+
+.text h4 {
   font-size: 16px;
+  color: white;
+}
+.img{
+  z-index: 3;
 }
 .img img {
-  margin-right: 300px;
+  margin-right: 160px;
+  /* z-index: 3; */
+ 
 }
-.page1{
-  margin-left: 250px;
-}
-.bl1{
+
+.bl1 {
   padding: 14px 28px;
 }
-.brand{
-  font-size: 16px;
-  margin-left: 200px;
+
+.page2 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.logo button{
-  padding: 8px 16px;
-  font-size: 12px;
+.text{
+  margin-left: 180px;
 }
+.part1{
+  border: 9px solid rgb(255, 255, 255);
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+.box{
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  height: 250px;
+  width: 85%;
+  position: absolute;
+  top: 650px;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+
 
 
 
