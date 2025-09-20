@@ -8,28 +8,31 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
+  
+  <label for="check" id="bar"> <i class="fa-solid fa-bars"></i> </label>
+  <input type="checkbox" id="check">
 
   <header id="navbar">
     <div class="nav-container">
       <h2 class="brand">Material Tailwind</h2>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
+    <nav>
+      <ul>
+          <li><a href="#fp1">Home</a></li>
+          <li><a href="#sp2">About Us</a></li>
+          <li><a href="#page3">Contact Us</a></li>
           <li><a href="#">Docs</a></li>
-        </ul>
-      </nav>
-      <div class="logo">
+      </ul>
+    </nav>
+    <div class="logo">
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-instagram"></i>
         <button class="bl">BLOCKS</button>
-      </div>
+    </div>
     </div>
   </header>
 
-  <section class="page1">
+  <section class="page1" id="fp1">
     <div class="text">
       <h1>Your Perfect <br> Learning App</h1> <br>
       <p>Our app is here to empower you on your quest for <br> knowledge, anytime and anywhere.</p>
@@ -41,13 +44,13 @@
 
     </div>
     <div class="img">
-        <img src="iphones.png" width="470px" height="640" alt="">
+        <img src="iphones.png" width="470px" height="640" alt="iphones image">
         
     </div>
     
   </section>
 
-  <section class="page2">
+  <section class="page2" id="sp2">
 
     <div class="part1">
       <div class="box">
@@ -55,27 +58,43 @@
           <p>Download our app to dive into a vast library of courses, tutorials, and study materials on a 
           wide <br> range of subjects - from programming and language learning to personal development and <br>
           beyond.</p>
+         
+
+           <div class="context">
+
+      <div><h4>Your Learning App</h4>
+      <br><h2>Diverse Learning Resources</h2> <br>
+      <p class="para">Access your learning materials on the go. Whether you're commuting, waiting for a friend,
+         or just have a few minutes to spare, <br>our app fits seamlessly into your busy life</p>
       </div>
-      
+
     <div id="mainBox">
      
 
       <div class="b11">
+        <button><i class="fa-solid fa-arrow-pointer"></i></button>
+
         <h3>Expert Instructors</h3>
         <p>Learn from the best. Our instructors are industry experts,<br>
         academics, and seasoned professionals dedicated to helping you.</p>
       </div>
       <div class="b11">
+        <button><i class="fa-solid fa-heart"></i></button>
+
         <h3>Interactive Learning</h3>
         <p>Engage with interactive quizzes, hands-on exercises,<br>
         and discussion forums to reinforce your understanding and connect.</p>
       </div>
       <div class="b11">
+        <button><i class="fa-solid fa-lock"></i></button>
+
         <h3>Achievement Unlocked</h3>
         <p>Earn certificates and badges as you complete courses,<br>
         showcasing your newfound skills to the world</p>
       </div>
       <div class="b11">
+        <button><i class="fa-solid fa-lightbulb"></i></button>
+        
         <h3>Personalized Progress Tracking</h3>
         <p>Stay on top of your learning journey with progress <br>
         tracking and personalized recommendations to keep you motivated.</p>
@@ -83,6 +102,60 @@
 
     </div>
   </section>
+
+  <section id="page3">
+
+      <div class="p3">
+
+        <div class="img2">
+          <img src="iphone.png" alt="iphone image" width="460px" height="620px">
+        </div>
+
+        <div class="text2">
+
+          <div class="pt1">
+          <h3>Mobile Convenience</h3> <br>
+          <p class="para3">Access your learning materials on the go.</p> <br>
+              <div class="pt11">
+            <div class="c1">
+              <h2>100</h2><br><p>Learning Courses</p>
+            </div>
+            <div class="c2">
+              <h2>500+</h2><br><p>Expert Instructors</p>
+            </div>
+            <div class="c3">
+              <h2>24/7</h2><br><p>Support</p>
+            </div>
+            <div class="c4">
+              <h2>5/5</h2><br><p>Review Stars</p>
+            </div>
+            </div>
+          </div>
+
+          <div class="p2">
+
+            
+
+          </div>
+
+        </div>
+
+      </div>
+
+  </section>
+
+   <footer>
+    <div class="container">
+      <p>&copy; 2025 Material Tailwind. All Rights Reserved.</p>
+       <div class="social-icons">
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+       </div>
+    </div>
+  </footer>
+
+
 
 </body>
 </html>

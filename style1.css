@@ -1,0 +1,495 @@
+
+
+/* General Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* --- NEW Animation --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  background-color: #f7fafc;
+}
+
+/* Reusable Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header & Navbar */
+#navbar {
+  width: 100%;
+  background-color: rgb(35, 35, 35);
+  padding: 10px 0px;
+  position: fixed;
+  z-index: 100;
+  border-bottom: 1px solid #444;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.brand {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  /* --- UPDATED Color --- */
+  color: #3B82F6;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  /* --- UPDATED Color --- */
+  color: #3B82F6;
+  transform: scale(1.1);
+}
+
+.bl {
+  border-radius: 7px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  color: #263238;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bl:hover {
+  /* --- UPDATED Color --- */
+  background-color: #3B82F6;
+  color: #ffffff;
+}
+
+#check, #bar {
+  display: none;
+}
+
+/* Section 1: Hero */
+.page1 {
+  background-image: linear-gradient(to right, rgb(45, 45, 45), rgb(25, 25, 25));
+  padding-top: 120px;
+  padding-bottom: 60px;
+  color: #ffffff;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.text h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+  /* --- NEW Animation --- */
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.text p {
+  font-size: 1.1rem;
+  max-width: 500px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  /* --- NEW Animation --- */
+  animation: fadeInUp 0.8s ease-out 0.2s;
+  animation-fill-mode: backwards; /* Starts animation from the beginning state */
+}
+
+.text h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #9E9E9E;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.bl1 {
+  padding: 14px 28px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.bl1:hover {
+  /* --- UPDATED Color --- */
+  background-color: #3B82F6;
+  border-color: #3B82F6;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);
+}
+
+.img img {
+  max-width: 450px;
+  height: auto;
+}
+
+/* Section 2: About / Key Info */
+.page2 {
+  padding: 60px 0;
+}
+
+.info-box {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-top: -80px;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.info-box h1 {
+  font-size: 2rem;
+  color: #263238;
+  margin-bottom: 1rem;
+}
+
+.info-box p {
+  color: #9E9E9E;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.features-intro {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.features-intro h4 {
+  /* --- UPDATED Color --- */
+  color: #3B82F6;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.features-intro h2 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: #263238;
+  margin-bottom: 1rem;
+}
+
+.features-intro .para {
+  font-size: 1.1rem;
+  color: #9E9E9E;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+
+.feature-card .icon-wrapper {
+  /* --- UPDATED Color --- */
+  background-color: #3B82F6;
+  color: white;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #263238;
+}
+
+.feature-card p {
+  color: #9E9E9E;
+  line-height: 1.6;
+}
+
+/* Section 3: Features & Stats */
+.page3 {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.content-split {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.image-content {
+  flex: 1;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.4s ease-in-out;
+}
+
+.image-content img:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
+.text-content {
+  flex: 1;
+}
+
+.text-content h3 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: #263238;
+}
+
+.text-content .subtitle {
+  font-size: 1.2rem;
+  color: #9E9E9E;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.stat-item .stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #263238;
+  display: block;
+}
+
+.stat-item p {
+  color: #9E9E9E;
+}
+
+/* Section 4: Testimonials */
+#testimonials {
+  padding: 80px 0;
+  background-color: #f7fafc;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.testimonials-header h2 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: #263238;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials-header p {
+  font-size: 1.1rem;
+  color: #9E9E9E;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+.testimonial-card .quote {
+  font-style: italic;
+  color: #263238;
+  line-height: 1.7;
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-card .author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.testimonial-card .author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-info h4 {
+  color: #263238;
+  margin: 0;
+}
+
+.author-info span {
+  color: #9E9E9E;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(35, 35, 35);
+    color: #9E9E9E;
+    padding: 2rem 0;
+    margin-top: 60px;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .social-icons a {
+    color: #9E9E9E;
+}
+
+
+/* ########## RESPONSIVE DESIGN (MEDIA QUERIES) ########## */
+@media (max-width: 992px) {
+  .hero-container,
+  .content-split {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text {
+    order: 2;
+  }
+  .img {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+  .app-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #bar {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgb(35, 35, 35);
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  #check:checked ~ nav {
+    height: 300px;
+  }
+  .header-actions .social-icons {
+    display: none;
+  }
+  .img img {
+    max-width: 300px;
+  }
+  footer .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
